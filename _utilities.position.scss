@@ -1,0 +1,68 @@
+//  Position Utilities
+
+
+
+
+//  Dependencies:
+//    Settings.Default
+//    Settings.Breakpoint
+
+
+
+
+// Options
+
+$iota-position      : true;
+$iota-position--res : false !default;
+
+
+
+
+.#{$iota-utility-namespace}absolute {
+  position: absolute !important;
+}
+
+.#{$iota-utility-namespace}fixed {
+  position: fixed !important;
+}
+
+.#{$iota-utility-namespace}relative {
+  position: relative !important;
+}
+
+.#{$iota-utility-namespace}static {
+  position: static !important;
+}
+
+
+
+
+// Responsive Position Utilities
+
+@if $iota-position--res {
+
+  @each $name, $size in $iota-breakpoint-sizes {
+
+    @media #{$size} {
+
+      .#{$iota-utility-namespace}absolute\@#{$name} {
+        position: absolute !important;
+      }
+
+      .#{$iota-utility-namespace}fixed\@#{$name} {
+        position: fixed !important;
+      }
+
+      .#{$iota-utility-namespace}relative\@#{$name} {
+        position: relative !important;
+      }
+
+      .#{$iota-utility-namespace}static\@#{$name} {
+        position: static !important;
+      }
+
+    }
+
+  }
+
+}
