@@ -19,7 +19,11 @@ npm install --save iotacss-position
 ### Options ###
 
 ```
-$iota-position--res : false !default;
+$iota-position--res               : false !default;
+$iota-position-absolute-namespace : 'absolute' !default;
+$iota-position-fixed-namespace    : 'fixed' !default;
+$iota-position-relative-namespace : 'relative' !default;
+$iota-position-static-namespace   : 'static' !default;
 ```
 
 

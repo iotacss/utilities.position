@@ -12,25 +12,29 @@
 
 // Options
 
-$iota-position      : true;
-$iota-position--res : false !default;
+$iota-position                    : true;
+$iota-position--res               : false !default;
+$iota-position-absolute-namespace : 'absolute' !default;
+$iota-position-fixed-namespace    : 'fixed' !default;
+$iota-position-relative-namespace : 'relative' !default;
+$iota-position-static-namespace   : 'static' !default;
 
 
 
 
-.#{$iota-utility-namespace}absolute {
+.#{$iota-utility-namespace}#{$iota-position-absolute-namespace} {
   position: absolute !important;
 }
 
-.#{$iota-utility-namespace}fixed {
+.#{$iota-utility-namespace}#{$iota-position-fixed-namespace} {
   position: fixed !important;
 }
 
-.#{$iota-utility-namespace}relative {
+.#{$iota-utility-namespace}#{$iota-position-relative-namespace} {
   position: relative !important;
 }
 
-.#{$iota-utility-namespace}static {
+.#{$iota-utility-namespace}#{$iota-position-static-namespace} {
   position: static !important;
 }
 
@@ -45,19 +49,19 @@ $iota-position--res : false !default;
 
     @media #{$size} {
 
-      .#{$iota-utility-namespace}absolute\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-position-absolute-namespace}\@#{$name} {
         position: absolute !important;
       }
 
-      .#{$iota-utility-namespace}fixed\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-position-fixed-namespace}\@#{$name} {
         position: fixed !important;
       }
 
-      .#{$iota-utility-namespace}relative\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-position-relative-namespace}\@#{$name} {
         position: relative !important;
       }
 
-      .#{$iota-utility-namespace}static\@#{$name} {
+      .#{$iota-utility-namespace}#{$iota-position-static-namespace}\@#{$name} {
         position: static !important;
       }
 
