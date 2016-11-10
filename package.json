@@ -1,6 +1,6 @@
 {
-  "name": "iotacss-position",
-  "version": "0.1.0",
+  "name": "iotacss-utils-position",
+  "version": "1.0.0",
   "description": "Position utility for iotaCSS",
   "main": "_utilities.position.scss",
   "repository": {
@@ -10,12 +10,9 @@
   "keywords": [
     "iotacss",
     "css",
+    "sass",
     "bem",
     "oocss"
   ],
-  "dependencies": {
-    "iotacss-default": "0.1.0",
-    "iotacss-breakpoint": "0.1.0"
-  },
   "author": "Dimitris Psaropoulos <info@harby.me>"
 }

@@ -6,30 +6,27 @@ The position utility contains helper classes for the CSS position property.
 ### Installation ###
 
 ```
-npm install --save iotacss-position
+npm install --save iotacss-utils-position
 ```
-
-
-### Dependencies ###
-
-* [Settings.Default](https://github.com/iotacss/settings.default)
-* [Settings.Breakpoint](https://github.com/iotacss/settings.breakpoint)
 
 
 ### Options ###
 
-```
-$iota-position--res               : false !default;
-$iota-position-absolute-namespace : 'absolute' !default;
-$iota-position-fixed-namespace    : 'fixed' !default;
-$iota-position-relative-namespace : 'relative' !default;
-$iota-position-static-namespace   : 'static' !default;
+```sass
+$iota-utils-position-namespace            : '' !default;
+$iota-utils-position-absolute-name        : 'absolute' !default;
+$iota-utils-position-fixed-name           : 'fixed' !default;
+$iota-utils-position-relative-name        : 'relative' !default;
+$iota-utils-position-static-name          : 'static' !default;
+
+$iota-utils-position-res                  : false !default;
+$iota-utils-position-breakpoints          : $iota-global-breakpoints !default;
 ```
 
 
 ### Classes ###
 
-```
+```css
 .u-absolute
 .u-fixed
 .u-relative
