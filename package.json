@@ -1,6 +1,6 @@
 {
   "name": "iotacss-utils-position",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Position utility for iotaCSS",
   "main": "_utilities.position.scss",
   "repository": {
